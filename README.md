@@ -74,7 +74,7 @@ pip install -r requirements.txt
 ```
 3. Clone the repo
 ```
-git clone <url-to-repo>
+git clone https://github.com/ranga4all1/food101-classification.git
 ```
 
 ### B) Model training and conversion
