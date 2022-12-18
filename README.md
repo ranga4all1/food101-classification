@@ -68,13 +68,13 @@ python test-aws.py
 conda create --name food101 python=3.9
 conda activate food101
 ```
-2. Install dependencies
-```
-pip install -r requirements.txt
-```
-3. Clone the repo
+2. Clone the repo
 ```
 git clone https://github.com/ranga4all1/food101-classification.git
+```
+3. Install dependencies
+```
+pip install -r requirements.txt
 ```
 
 ### B) Model training and conversion
