@@ -95,14 +95,14 @@ python test-tf-model.py
 Output should look like this:
 ```
 {
- 'cup_cakes': -1.6670524,
- 'french_fries': -1.0787222,
- 'hamburger': -1.6100546, 
- 'pizza': 0.68576145, 
- 'ramen': -0.7817082, 
- 'onion_rings': -3.3420057, 
- 'samosa': 10.320705, 
- 'waffles': 0.4640668
+ 'cup_cakes': -1.2718466520309448,
+ 'french_fries': -1.4103089570999146,
+ 'hamburger': -1.215340256690979, 
+ 'pizza': 0.917534351348877, 
+ 'ramen': -0.46378156542778015, 
+ 'onion_rings': -2.170910596847534, 
+ 'samosa': 4.749229907989502, 
+ 'waffles': -1.291038155555725
  }
 ```
 4. Run `convert.py'. This would convert TF model to TF-Lite model and test it
@@ -112,14 +112,14 @@ python convert.py
 This should generate `food101-model.tflite` file and test this tflite model with test image (samosa.jpg) hosted on Github generating test output similar to this:
 ```
 {
- 'cup_cakes': -1.6670524,
- 'french_fries': -1.0787222,
- 'hamburger': -1.6100546, 
- 'pizza': 0.68576145, 
- 'ramen': -0.7817082, 
- 'onion_rings': -3.3420057, 
- 'samosa': 10.320705, 
- 'waffles': 0.4640668
+ 'cup_cakes': -1.2718466520309448,
+ 'french_fries': -1.4103089570999146,
+ 'hamburger': -1.215340256690979, 
+ 'pizza': 0.917534351348877, 
+ 'ramen': -0.46378156542778015, 
+ 'onion_rings': -2.170910596847534, 
+ 'samosa': 4.749229907989502, 
+ 'waffles': -1.291038155555725
  }
 ```
 
@@ -144,14 +144,14 @@ python test-local.py
 Output should look like this:
 ```
 {
- 'cup_cakes': -1.6670524,
- 'french_fries': -1.0787222,
- 'hamburger': -1.6100546, 
- 'pizza': 0.68576145, 
- 'ramen': -0.7817082, 
- 'onion_rings': -3.3420057, 
- 'samosa': 10.320705, 
- 'waffles': 0.4640668
+ 'cup_cakes': -1.2718466520309448,
+ 'french_fries': -1.4103089570999146,
+ 'hamburger': -1.215340256690979, 
+ 'pizza': 0.917534351348877, 
+ 'ramen': -0.46378156542778015, 
+ 'onion_rings': -2.170910596847534, 
+ 'samosa': 4.749229907989502, 
+ 'waffles': -1.291038155555725
  }
 ```
 ----------------------
@@ -225,15 +225,15 @@ docker push ${REMOTE_URI}
     ```
     The area below shows the last 4 KB of the execution log.
    {
-    'cup_cakes': -1.6670524,
-    'french_fries': -1.0787222,
-    'hamburger': -1.6100546, 
-    'pizza': 0.68576145, 
-    'ramen': -0.7817082, 
-    'onion_rings': -3.3420057, 
-    'samosa': 10.320705, 
-    'waffles': 0.4640668
-    }
+ 'cup_cakes': -1.2718466520309448,
+ 'french_fries': -1.4103089570999146,
+ 'hamburger': -1.215340256690979, 
+ 'pizza': 0.917534351348877, 
+ 'ramen': -0.46378156542778015, 
+ 'onion_rings': -2.170910596847534, 
+ 'samosa': 4.749229907989502, 
+ 'waffles': -1.291038155555725
+ }
     ```
 ----------------------
 **API GAteway**
@@ -261,15 +261,15 @@ and then click 'Test'
     Status: 200
     Latency: 2549 ms
     Response Body
-    {
- 'cup_cakes': -1.6670524,
- 'french_fries': -1.0787222,
- 'hamburger': -1.6100546, 
- 'pizza': 0.68576145, 
- 'ramen': -0.7817082, 
- 'onion_rings': -3.3420057, 
- 'samosa': 10.320705, 
- 'waffles': 0.4640668
+  {
+ 'cup_cakes': -1.2718466520309448,
+ 'french_fries': -1.4103089570999146,
+ 'hamburger': -1.215340256690979, 
+ 'pizza': 0.917534351348877, 
+ 'ramen': -0.46378156542778015, 
+ 'onion_rings': -2.170910596847534, 
+ 'samosa': 4.749229907989502, 
+ 'waffles': -1.291038155555725
  }
     ```
 9) In Resources - Action -> click Deploy API - Deployment stage: New Stage, Stage name: Test
@@ -286,14 +286,14 @@ python test-aws.py
 Result :
 ```
 {
- 'cup_cakes': -1.6670524,
- 'french_fries': -1.0787222,
- 'hamburger': -1.6100546, 
- 'pizza': 0.68576145, 
- 'ramen': -0.7817082, 
- 'onion_rings': -3.3420057, 
- 'samosa': 10.320705, 
- 'waffles': 0.4640668
+ 'cup_cakes': -1.2718466520309448,
+ 'french_fries': -1.4103089570999146,
+ 'hamburger': -1.215340256690979, 
+ 'pizza': 0.917534351348877, 
+ 'ramen': -0.46378156542778015, 
+ 'onion_rings': -2.170910596847534, 
+ 'samosa': 4.749229907989502, 
+ 'waffles': -1.291038155555725
  }
 ```
 
