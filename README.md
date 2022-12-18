@@ -121,7 +121,7 @@ This should generate `food101-model.tflite` file and test this tflite model with
  'samosa': 4.749229907989502, 
  'waffles': -1.291038155555725
  }
-```
+``` 
 
 ### C) Containerization
 
@@ -153,7 +153,7 @@ Output should look like this:
  'samosa': 4.749229907989502, 
  'waffles': -1.291038155555725
  }
-```
+``` 
 ----------------------
 
 ### D) Deploy to cloud - AWS lambda + API GAteway
@@ -222,19 +222,20 @@ docker push ${REMOTE_URI}
     Execution result: succeeded(logs)
 
     Click -> Details
-    ```
+    
     The area below shows the last 4 KB of the execution log.
-   {
- 'cup_cakes': -1.2718466520309448,
- 'french_fries': -1.4103089570999146,
- 'hamburger': -1.215340256690979, 
- 'pizza': 0.917534351348877, 
- 'ramen': -0.46378156542778015, 
- 'onion_rings': -2.170910596847534, 
- 'samosa': 4.749229907989502, 
- 'waffles': -1.291038155555725
- }
-    ```
+   ```
+    {
+    'cup_cakes': -1.2718466520309448,
+    'french_fries': -1.4103089570999146,
+    'hamburger': -1.215340256690979, 
+    'pizza': 0.917534351348877, 
+    'ramen': -0.46378156542778015, 
+    'onion_rings': -2.170910596847534, 
+    'samosa': 4.749229907989502, 
+    'waffles': -1.291038155555725
+    }
+   ``` 
 ----------------------
 **API GAteway**
 
@@ -256,12 +257,13 @@ docker push ${REMOTE_URI}
 and then click 'Test'
 
 8) Result should look like this:
-    ```
+```
     Request: /predict
     Status: 200
     Latency: 2549 ms
     Response Body
-  {
+
+{
  'cup_cakes': -1.2718466520309448,
  'french_fries': -1.4103089570999146,
  'hamburger': -1.215340256690979, 
@@ -271,7 +273,7 @@ and then click 'Test'
  'samosa': 4.749229907989502, 
  'waffles': -1.291038155555725
  }
-    ```
+``` 
 9) In Resources - Action -> click Deploy API - Deployment stage: New Stage, Stage name: Test
 10) In test Stage Editor -> Copy 'Invoke URL' and then save changes
 
@@ -294,7 +296,7 @@ Result :
  'onion_rings': -2.170910596847534, 
  'samosa': 4.749229907989502, 
  'waffles': -1.291038155555725
- }
+}
 ```
 
 ## Notes
