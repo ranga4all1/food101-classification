@@ -74,6 +74,7 @@ git clone https://github.com/ranga4all1/food101-classification.git
 ```
 3. Install dependencies
 ```
+cd food101-classification
 pip install -r requirements.txt
 ```
 
